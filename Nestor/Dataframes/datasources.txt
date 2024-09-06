@@ -1,0 +1,6 @@
+stock data  https://finance.yahoo.com/quote/%5EGSPC/history/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACgcAAflw6EY-jFGh7VmV6ZXePq034LmPxwwUsQMxhhtfb_Ymbt3nR3yhbIZYdg71J5aBAvS9SBoRLgNspulwdioiw4licbG28hNPeOTLLNJm5U47qPCMSortE0CU7pwXF7MwS_GzmO7-mGh47ksGgN7zMBkWxoVDO680acXtHnx&frequency=1mo
+
+
+fed_interest_rate  https://fred.stlouisfed.org/series/FEDFUNDS
+
+Mortgage rates  https://fred.stlouisfed.org/series/MORTGAGE30US
