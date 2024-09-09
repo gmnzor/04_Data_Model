@@ -4,3 +4,5 @@ stock data  https://finance.yahoo.com/quote/%5EGSPC/history/?guccounter=1&guce_r
 fed_interest_rate  https://fred.stlouisfed.org/series/FEDFUNDS
 
 Mortgage rates  https://fred.stlouisfed.org/series/MORTGAGE30US
+
+layoffs  https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022/data
