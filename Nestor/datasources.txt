@@ -1,8 +1,19 @@
-stock data  https://finance.yahoo.com/quote/%5EGSPC/history/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACgcAAflw6EY-jFGh7VmV6ZXePq034LmPxwwUsQMxhhtfb_Ymbt3nR3yhbIZYdg71J5aBAvS9SBoRLgNspulwdioiw4licbG28hNPeOTLLNJm5U47qPCMSortE0CU7pwXF7MwS_GzmO7-mGh47ksGgN7zMBkWxoVDO680acXtHnx&frequency=1mo
+layoffs.csv
+"Historical Layoff data"
+https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022/data
 
+FEDFUNDS.csv  
+"Federal Interest Rate"
+https://fred.stlouisfed.org/series/FEDFUNDS
 
-fed_interest_rate  https://fred.stlouisfed.org/series/FEDFUNDS
+MORTGAGE30US.csv
+"Mortgage rates" 
+https://fred.stlouisfed.org/series/MORTGAGE30US
 
-Mortgage rates  https://fred.stlouisfed.org/series/MORTGAGE30US
+unemployment_rate.csv
+"Historical Unemployment rate"
+https://fred.stlouisfed.org/series/UNRATE
 
-layoffs  https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022/data
+stock_data.csv
+"Monthly stock data"  
+https://finance.yahoo.com/quote/%5EGSPC/history/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACgcAAflw6EY-jFGh7VmV6ZXePq034LmPxwwUsQMxhhtfb_Ymbt3nR3yhbIZYdg71J5aBAvS9SBoRLgNspulwdioiw4licbG28hNPeOTLLNJm5U47qPCMSortE0CU7pwXF7MwS_GzmO7-mGh47ksGgN7zMBkWxoVDO680acXtHnx&frequency=1mo
