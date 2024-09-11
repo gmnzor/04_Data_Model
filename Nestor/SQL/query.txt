@@ -1,0 +1,22 @@
+SELECT l.date, 
+	l.laid_off_by_month, 
+	l.funds_raised_by_month, 
+	m.mortgage_rate,
+	u.unemployment_rate,
+	f.fed_rate,
+	s.stock_open,
+    s.stock_high,
+    s.stock_low,
+    s.stock_close,
+    s.stock_adj_close, 
+    s.stock_volume
+FROM layoffs_data as l
+JOIN mortgage_rate_data as m
+ON (l.date = m.date)
+	JOIN unemployment_rate_data as u
+	ON (l.date = u.date)
+		JOIN fed_interest_rate_data as f
+		ON (l.date = f.date)
+			JOIN stock_data as s
+			ON (l.date = s.date)
+;
