@@ -1,0 +1,68 @@
+layoffs_data
+-
+date date PK
+laid_off_by_month int
+funds_raised_by_month float
+
+mortgage_rate_data
+-
+date date 
+mortgage_rate float
+
+stock_data
+-
+date date 
+stock_open float
+stock_high float
+stock_low float
+stock_close float
+stock_adj_close float
+stock_volume int
+
+unemployment_rate_data
+-
+date date 
+unemployment_rate float
+
+fed_interest_rate_data
+-
+date date 
+fed_rate float
+
+consumer_price_index_data
+-
+date date 
+education_and_communication_commodities_inflation float
+education_and_communication_services_inflation float
+information_technology_commodities_inflation float
+education_and_communication_commodities_avg_value float
+education_and_communication_services_avg_value float
+information_technology_commodities_avg_value float
+
+wages_data
+-
+date date 
+benefits_inflation float
+total_compensation_inflation float
+wages_and_salaries_inflation float
+benefits_avg_value float
+total_compensation_avg_value float 
+wages_and_salaries_avg_value float
+
+bank_credit_data
+-
+date date
+bank_credit float
+securities_in_bank_credit float
+treasury_agency_securities float
+other_securities float
+real_estate_loans float
+total_assets float
+currency_sa float
+demand_deposits_sa float
+monetary_base_currency_nsa float
+monetary_base_total_nsa float
+pct_change_consumer_credit_sa float
+consumer_credit_owned_securitized_sa float
+consumer_credit_nonfinancial_owned_nsa float
+consumer_credit_credit_unions_owned_nsa float
