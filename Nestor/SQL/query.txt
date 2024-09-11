@@ -21,7 +21,22 @@ SELECT l.date,
     w.wages_and_salaries_inflation,
     w.benefits_avg_value,
     w.total_compensation_avg_value,
-    w.wages_and_salaries_avg_value
+    w.wages_and_salaries_avg_value,
+	b.bank_credit,
+	b.securities_in_bank_credit,
+	b.treasury_agency_securities,
+	b.other_securities,
+	b.real_estate_loans,
+	b.total_assets,
+	b.currency_sa,
+	b.demand_deposits_sa,
+	b.monetary_base_currency_nsa,
+	b.monetary_base_total_nsa,
+	b.pct_change_consumer_credit_sa,
+	b.consumer_credit_owned_securitized_sa,
+	b.consumer_credit_nonfinancial_owned_nsa,
+	b.consumer_credit_credit_unions_owned_nsa
+
 FROM layoffs_data as l
 JOIN mortgage_rate_data as m
 ON (l.date = m.date)
@@ -35,3 +50,7 @@ ON (l.date = m.date)
 				ON (l.date = c.date)
 					Left Join wages_data as w -- This is running as a left join because wage date is quarterly, not monthly
 					ON (l.date = w.date)
+						LEFT JOIN bank_credit_data as b --This is running as a left join because bank credit data ends early in January 2024
+						ON (l.date = b.date)
+ORDER by l.date
+;					ON (l.date = w.date)
