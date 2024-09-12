@@ -1,9 +1,48 @@
-# 04_Data_Model
+# Project 04 - Predictions Utilizing Various ML Models
 Jorge Benavente, 
 Elizabeth Dutton,
 Victoria Scott,
 & Nestor Gomez
 
+## Objective
+This project uses historical data on layoffs, mortgage rates, unemployment rates, stock market performance, and wage information to develop predictive models to be able to predict stock market values.
+
+## Data Used
+
+## Preprocessing
+"What processes did you have to do to prepare the data for the model? (EDA, data cleaning, normalization, feature selection, etc)"
+### Python
+
+### SQL
+We utilized a PostgreSQL database to house our data and collate our data for use in our model.
+
+## Machine Learning Model
+"How did you choose your ML model? Did you try any other models?
+How did you optimize your model?
+What did you learn from your model, and can it be used for the goal you had originally set out to accomplish?"
+
+## Post-Mortem
+### Limitations
+1. Timeframe
+    - Our data begins in March 2020, just more than four years. While this provides a unique insight into how the economy has performed during a global pandemic, it limits our data points and predictive power. 
+2. Data Quality
+    - Even within this limited timeframe, we still ran into some data issues. Our layoff data was missing May and July of 2021, one-sixth of one of only four years. Additionally, some of our data was incongruous. Wages is tracked quarterly, not monthly. Some other economic indicator datasets were missing months at the tale end.
+3. Data Scope
+    - Our data was limited to focus on the tech sector, specifically with wage data and consumer price index data. This focus allowed us to process data quickly, but it did contribute to problems with our data shape, i.e. a dataset that was nearly as wide as it was tall. 
+4. Prior experience and deadline
+    - As beginning Data Analysts, we don't know what we dont know. There may have been quicker or more efficient methods to much of the workflow of this project. We may also have been ignorant to better analytical tools. Additionally, the quick turnaround for the project limited our scope. In other words, we had to be sure to have completed the assignments before pencils were ordered down.
+
+### Next Steps
+1. Expanding Timeframe
+    - Looking back farther and including more dates would help with our data shape concern. As with all MLM, more data leads to more predictive power.
+2. Effects Lag Behind Causes
+    - One feature we were unable to include in the scope of this analysis is taking time into account. Certain varibales, like layoffs could lag behind wage growth or unemployment numbers by one, two, three or months. Rerunning this analysis with this in mind could lead to more predictive power.
+2. More Economic Indicators
+    - Economies are complicated, living systems with a variety of contributing factors. more economic indicators that culd be added include GDP, Import/Export comparisons, and Consumer Confidence Index
+3. Expanding Data Scope
+    - Expanding our datasets outside of the tech sector could improve predictive power, as could inlcuding global economic trends alongside our US only data.
+4. Continued Learning
+    - As we continue in this new field, our expertise will grow as will our toolbelt. Reviewing this question again in a year would likely yield improved results.
 
 ## Resources
 Kaggle.com
