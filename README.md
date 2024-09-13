@@ -64,15 +64,27 @@ After cleaning the data, we selected the **Gradient Boosting Regressor** due to 
 **Prediction Visualization**:  
 ![Stock Close Price Predictions](patterns_predictions/prediction_images/stock_close_actual_vs_predicted.png)
 
-## Limitations
-1. **Timeframe**: Our dataset spans only four years, which limits the predictive power.
-2. **Data Quality**: Some data points, particularly in layoffs and wages, were missing, which could affect the accuracy of the model.
-3. **Sector Focus**: Data was mainly focused on the tech sector, potentially limiting broader application.
-
-## Next Steps
-1. **Expand the timeframe**: Including more historical data could improve predictions.
-2. **Lag Effect Analysis**: Examining potential lag between economic indicators and stock prices.
-3. **Broaden the dataset**: Incorporating more sectors and global economic indicators.
+## Post-Mortem
+### Limitations
+1. Timeframe
+    - Our data begins in March 2020, just more than four years. While this provides a unique insight into how the economy has performed during a global pandemic, it limits our data points and predictive power. 
+2. Data Quality
+    - Even within this limited timeframe, we still ran into some data issues. Our layoff data was missing May and July of 2021, one-sixth of one of only four years. Additionally, some of our data was incongruous. Wages is tracked quarterly, not monthly. Some other economic indicator datasets were missing months at the tale end.
+3. Data Scope
+    - Our data was limited to focus on the tech sector, specifically with wage data and consumer price index data. This focus allowed us to process data quickly, but it did contribute to problems with our data shape, i.e. a dataset that was nearly as wide as it was tall. 
+4. Prior experience and deadline
+    - As beginning Data Analysts, we don't know what we dont know. There may have been quicker or more efficient methods to much of the workflow of this project. We may also have been ignorant to better analytical tools. Additionally, the quick turnaround for the project limited our scope. In other words, we had to be sure to have completed the assignments before pencils were ordered down.
+### Next Steps
+1. Expanding Timeframe
+    - Looking back farther and including more dates would help with our data shape concern. As with all MLM, more data leads to more predictive power.
+2. Effects Lag Behind Causes
+    - One feature we were unable to include in the scope of this analysis is taking time into account. Certain varibales, like layoffs could lag behind wage growth or unemployment numbers by one, two, three or months. Rerunning this analysis with this in mind could lead to more predictive power.
+2. More Economic Indicators
+    - Economies are complicated, living systems with a variety of contributing factors. more economic indicators that culd be added include GDP, Import/Export comparisons, and Consumer Confidence Index
+3. Expanding Data Scope
+    - Expanding our datasets outside of the tech sector could improve predictive power, as could inlcuding global economic trends alongside our US only data.
+4. Continued Learning
+    - As we continue in this new field, our expertise will grow as will our toolbelt. Reviewing this question again in a year would likely yield improved results.
 
 ## Data Sources
 - **[Layoffs Data](https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022/data)**
