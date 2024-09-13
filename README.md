@@ -8,6 +8,9 @@
 ## Objective
 This project focuses on using historical data on layoffs, mortgage rates, unemployment rates, stock market performance, and wage information to develop machine learning (ML) models for predicting stock market values.
 
+## Slide Presentation
+A comprehensive slide deck summarizing the **random forest model** and the **gradient boosting model** predictions is available [here](https://docs.google.com/presentation/d/1At24Lp1zJ_oxY6aGrxhRjLDrNptB0pVD3oqKOQS3ris/edit#slide=id.g2ffbaa39248_1_0). The slide includes visual representations of predictions, models used, and analysis of the stock close prices for the years 2020–2025.
+
 ## Data Used
 ### Economic Indicators
 - **Mortgage Rates**: Trends in 30-year fixed mortgage rates provide insight into the housing market.
