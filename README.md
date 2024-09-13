@@ -8,18 +8,42 @@ Victoria Scott,
 This project uses historical data on layoffs, mortgage rates, unemployment rates, stock market performance, and wage information to develop predictive models to be able to predict stock market values.
 
 ## Data Used
+- Economic Indicators
+    - Mortgage Rates: Trends in the 30-year fixed mortgage rates provide insight into the housing market's health.
+    - Federal Interest Rates (fed_rate): These rates impact business borrowing costs and overall economic activity.
+    - Unemployment Rates: Tracks the percentage of the labor force that is unemployed and seeking work.
+
+- Stock Market Data
+    - Stock Prices: Historical stock data (open, high, low, close) from S&P 500 provides insights into market performance.
+    - Adjusted Close and Volume: These metrics help assess stock market volatility and investor behavior over time.
+
+- Layoff and Business Metrics
+    - Layoffs by Month: Historical data on layoffs for the years 2020-2024.
+    - Funds Raised by Month: Tracks the funds raised by companies, giving insight into business growth and investments during certain periods.
+    - CPI and Wage Data: Consumer price index and wage data provide additional context on inflation and its relationship to layoffs.
+
+
+
 
 ## Preprocessing
 "What processes did you have to do to prepare the data for the model? (EDA, data cleaning, normalization, feature selection, etc)"
 ### Python
 
 ### SQL
-We utilized a PostgreSQL database to house our data and collate our data for use in our model.
+We utilized a PostgreSQL database to house our data and collate our data for use in our model. We called every column proactively instead of using a SELECT * to maintain an order to the columns in our data. Similarly, we used an ORDER BY statement focusing on the date to ensure our data was in chronological order.
+
+This long SQL query led to data that was almost as wide as it was tall. 
+
+We also utilizedtwo different kinds of joins - implicit joins and an explicitly left join which made sure we did not filter out rowas where a subset of our data was null. Otherwise, we would have dropped from monthly segnments down to quarterly, cuttin our data in fours.
 
 ## Machine Learning Model
 "How did you choose your ML model? Did you try any other models?
 How did you optimize your model?
 What did you learn from your model, and can it be used for the goal you had originally set out to accomplish?"
+
+### Time Series Model
+
+### Random Forest
 
 ## Post-Mortem
 ### Limitations
@@ -44,7 +68,7 @@ What did you learn from your model, and can it be used for the goal you had orig
 4. Continued Learning
     - As we continue in this new field, our expertise will grow as will our toolbelt. Reviewing this question again in a year would likely yield improved results.
 
-## Resources
+## Data sources
 Kaggle.com
 - [Layoffs](https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022/data)
 
