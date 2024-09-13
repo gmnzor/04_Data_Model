@@ -33,6 +33,9 @@ We conducted thorough data cleaning and exploratory data analysis (EDA), includi
 - **[CPI Transformation](patterns_predictions/CPI_transform.ipynb)**: Cleaning and transforming consumer price index data.
 - **[Wage Data Processing](patterns_predictions/wages_tech.ipynb)**: Processing and cleaning wage data.
 - **[Stock Data Transformation](patterns_predictions/stock_cleaning.ipynb)**: Cleaning and normalizing stock data.
+ 
+### Banking, Credit and Asset panel data
+The Money Stock Measures cover liquid forms of money, such as currency, demand deposits, and small-time deposits. The Assets and Liabilities of Commercial Banks report aggregated balance sheets for commercial banks. The Consumer Credit report details revolving and nonrevolving credit extended to consumers, showing growth rates, levels, and flows. After cleaning the data, we merged datasets and added new variables, then split and trained the data on a smaller scale. This analysis included both Consumer Credit and the monetary base.
 
 ### SQL Database
 We used a PostgreSQL database to manage the large dataset. Queries were designed to maintain order and consistency, with special attention to ensure rows with missing data were preserved where possible.
